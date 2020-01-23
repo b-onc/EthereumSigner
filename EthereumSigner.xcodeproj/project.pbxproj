@@ -3,17 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797FBD0623D9E3F00060D62B /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FBD0523D9E3F00060D62B /* Signature.swift */; };
+		797FBD0823DA498D0060D62B /* QRReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FBD0723DA498D0060D62B /* QRReaderView.swift */; };
+		797FBD0B23DA581A0060D62B /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 797FBD0A23DA581A0060D62B /* Web3 */; };
+		797FBD0D23DA5A020060D62B /* UITextField+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FBD0C23DA5A020060D62B /* UITextField+Shake.swift */; };
 		79F1EEFB23D8E07D00BBFA62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EEFA23D8E07D00BBFA62 /* AppDelegate.swift */; };
 		79F1EEFD23D8E07D00BBFA62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EEFC23D8E07D00BBFA62 /* SceneDelegate.swift */; };
-		79F1EEFF23D8E07D00BBFA62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EEFE23D8E07D00BBFA62 /* ViewController.swift */; };
+		79F1EEFF23D8E07D00BBFA62 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EEFE23D8E07D00BBFA62 /* SetupViewController.swift */; };
 		79F1EF0223D8E07D00BBFA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F1EF0023D8E07D00BBFA62 /* Main.storyboard */; };
 		79F1EF0423D8E08100BBFA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F1EF0323D8E08100BBFA62 /* Assets.xcassets */; };
 		79F1EF0723D8E08100BBFA62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F1EF0523D8E08100BBFA62 /* LaunchScreen.storyboard */; };
 		79F1EF1223D8E08100BBFA62 /* EthereumSignerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF1123D8E08100BBFA62 /* EthereumSignerTests.swift */; };
+		79F1EF2123D8E1A400BBFA62 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 79F1EF2023D8E1A400BBFA62 /* SnapKit */; };
+		79F1EF2423D8E38A00BBFA62 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF2323D8E38A00BBFA62 /* User.swift */; };
+		79F1EF2623D8E40800BBFA62 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF2523D8E40800BBFA62 /* AccountViewController.swift */; };
+		79F1EF2923D8E49800BBFA62 /* AccountDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF2823D8E49800BBFA62 /* AccountDetailTableViewCell.swift */; };
+		79F1EF2B23D8EEBE00BBFA62 /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF2A23D8EEBE00BBFA62 /* SigningViewController.swift */; };
+		79F1EF2D23D8F09900BBFA62 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF2C23D8F09900BBFA62 /* SignatureViewController.swift */; };
+		79F1EF2F23D8F31200BBFA62 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF2E23D8F31200BBFA62 /* VerificationViewController.swift */; };
+		79F1EF3123D8F37700BBFA62 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF3023D8F37700BBFA62 /* ScannerViewController.swift */; };
+		79F1EF3C23D8FEA400BBFA62 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1EF3B23D8FEA400BBFA62 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		797FBD0523D9E3F00060D62B /* Signature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		797FBD0723DA498D0060D62B /* QRReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderView.swift; sourceTree = "<group>"; };
+		797FBD0C23DA5A020060D62B /* UITextField+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Shake.swift"; sourceTree = "<group>"; };
 		79F1EEF723D8E07D00BBFA62 /* EthereumSigner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthereumSigner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F1EEFA23D8E07D00BBFA62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F1EEFC23D8E07D00BBFA62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79F1EEFE23D8E07D00BBFA62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79F1EEFE23D8E07D00BBFA62 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		79F1EF0123D8E07D00BBFA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79F1EF0323D8E08100BBFA62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79F1EF0623D8E08100BBFA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +54,14 @@
 		79F1EF0D23D8E08100BBFA62 /* EthereumSignerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthereumSignerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F1EF1123D8E08100BBFA62 /* EthereumSignerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumSignerTests.swift; sourceTree = "<group>"; };
 		79F1EF1323D8E08100BBFA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F1EF2323D8E38A00BBFA62 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		79F1EF2523D8E40800BBFA62 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		79F1EF2823D8E49800BBFA62 /* AccountDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailTableViewCell.swift; sourceTree = "<group>"; };
+		79F1EF2A23D8EEBE00BBFA62 /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
+		79F1EF2C23D8F09900BBFA62 /* SignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		79F1EF2E23D8F31200BBFA62 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		79F1EF3023D8F37700BBFA62 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		79F1EF3B23D8FEA400BBFA62 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F1EF2123D8E1A400BBFA62 /* SnapKit in Frameworks */,
+				797FBD0B23DA581A0060D62B /* Web3 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +105,14 @@
 		79F1EEF923D8E07D00BBFA62 /* EthereumSigner */ = {
 			isa = PBXGroup;
 			children = (
+				79F1EF1E23D8E0D800BBFA62 /* Storyboard */,
+				79F1EF3D23D8FEC400BBFA62 /* Helper */,
+				79F1EF2723D8E45100BBFA62 /* View */,
+				79F1EF2223D8E37F00BBFA62 /* Model */,
+				79F1EF1C23D8E0C500BBFA62 /* ViewController */,
 				79F1EEFA23D8E07D00BBFA62 /* AppDelegate.swift */,
 				79F1EEFC23D8E07D00BBFA62 /* SceneDelegate.swift */,
-				79F1EEFE23D8E07D00BBFA62 /* ViewController.swift */,
-				79F1EF0023D8E07D00BBFA62 /* Main.storyboard */,
 				79F1EF0323D8E08100BBFA62 /* Assets.xcassets */,
-				79F1EF0523D8E08100BBFA62 /* LaunchScreen.storyboard */,
 				79F1EF0823D8E08100BBFA62 /* Info.plist */,
 			);
 			path = EthereumSigner;
@@ -97,6 +125,55 @@
 				79F1EF1323D8E08100BBFA62 /* Info.plist */,
 			);
 			path = EthereumSignerTests;
+			sourceTree = "<group>";
+		};
+		79F1EF1C23D8E0C500BBFA62 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79F1EEFE23D8E07D00BBFA62 /* SetupViewController.swift */,
+				79F1EF2523D8E40800BBFA62 /* AccountViewController.swift */,
+				79F1EF2A23D8EEBE00BBFA62 /* SigningViewController.swift */,
+				79F1EF2C23D8F09900BBFA62 /* SignatureViewController.swift */,
+				79F1EF2E23D8F31200BBFA62 /* VerificationViewController.swift */,
+				79F1EF3023D8F37700BBFA62 /* ScannerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		79F1EF1E23D8E0D800BBFA62 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				79F1EF0023D8E07D00BBFA62 /* Main.storyboard */,
+				79F1EF0523D8E08100BBFA62 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		79F1EF2223D8E37F00BBFA62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79F1EF2323D8E38A00BBFA62 /* User.swift */,
+				797FBD0523D9E3F00060D62B /* Signature.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79F1EF2723D8E45100BBFA62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79F1EF2823D8E49800BBFA62 /* AccountDetailTableViewCell.swift */,
+				797FBD0723DA498D0060D62B /* QRReaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79F1EF3D23D8FEC400BBFA62 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				79F1EF3B23D8FEA400BBFA62 /* Config.swift */,
+				797FBD0C23DA5A020060D62B /* UITextField+Shake.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +192,10 @@
 			dependencies = (
 			);
 			name = EthereumSigner;
+			packageProductDependencies = (
+				79F1EF2023D8E1A400BBFA62 /* SnapKit */,
+				797FBD0A23DA581A0060D62B /* Web3 */,
+			);
 			productName = EthereumSigner;
 			productReference = 79F1EEF723D8E07D00BBFA62 /* EthereumSigner.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +246,10 @@
 				Base,
 			);
 			mainGroup = 79F1EEEE23D8E07D00BBFA62;
+			packageReferences = (
+				79F1EF1F23D8E1A400BBFA62 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				797FBD0923DA581A0060D62B /* XCRemoteSwiftPackageReference "Web3" */,
+			);
 			productRefGroup = 79F1EEF823D8E07D00BBFA62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,8 +285,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F1EEFF23D8E07D00BBFA62 /* ViewController.swift in Sources */,
+				797FBD0623D9E3F00060D62B /* Signature.swift in Sources */,
+				79F1EF2B23D8EEBE00BBFA62 /* SigningViewController.swift in Sources */,
+				797FBD0D23DA5A020060D62B /* UITextField+Shake.swift in Sources */,
+				79F1EF2D23D8F09900BBFA62 /* SignatureViewController.swift in Sources */,
+				79F1EF2423D8E38A00BBFA62 /* User.swift in Sources */,
+				79F1EF3123D8F37700BBFA62 /* ScannerViewController.swift in Sources */,
+				79F1EF3C23D8FEA400BBFA62 /* Config.swift in Sources */,
+				79F1EF2623D8E40800BBFA62 /* AccountViewController.swift in Sources */,
+				79F1EEFF23D8E07D00BBFA62 /* SetupViewController.swift in Sources */,
 				79F1EEFB23D8E07D00BBFA62 /* AppDelegate.swift in Sources */,
+				79F1EF2F23D8F31200BBFA62 /* VerificationViewController.swift in Sources */,
+				797FBD0823DA498D0060D62B /* QRReaderView.swift in Sources */,
+				79F1EF2923D8E49800BBFA62 /* AccountDetailTableViewCell.swift in Sources */,
 				79F1EEFD23D8E07D00BBFA62 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +565,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		797FBD0923DA581A0060D62B /* XCRemoteSwiftPackageReference "Web3" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/b-onc/Web3.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		79F1EF1F23D8E1A400BBFA62 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		797FBD0A23DA581A0060D62B /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 797FBD0923DA581A0060D62B /* XCRemoteSwiftPackageReference "Web3" */;
+			productName = Web3;
+		};
+		79F1EF2023D8E1A400BBFA62 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F1EF1F23D8E1A400BBFA62 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79F1EEEF23D8E07D00BBFA62 /* Project object */;
 }
