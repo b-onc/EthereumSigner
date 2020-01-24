@@ -11,6 +11,7 @@ import AVFoundation
 
 protocol QRReaderViewDelegate: class {
     func qrReaderView(_ qrReaderView: QRReaderView, detected string: String)
+    func didFailToSetup(qrReaderView: QRReaderView)
 }
 
 class QRReaderView: UIView {
@@ -27,6 +28,7 @@ class QRReaderView: UIView {
         // as the media type parameter.
         guard let captureDevice = AVCaptureDevice.default(for: AVMediaType.video) else {
             print("Could not find capture device!")
+            delegate?.didFailToSetup(qrReaderView: self)
             return
         }
          
@@ -39,6 +41,7 @@ class QRReaderView: UIView {
             captureSession.addInput(input as AVCaptureInput)
         } catch {
             print(error)
+            delegate?.didFailToSetup(qrReaderView: self)
             return
         }
         

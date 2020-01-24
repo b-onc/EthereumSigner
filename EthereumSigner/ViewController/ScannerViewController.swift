@@ -27,7 +27,7 @@ class ScannerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         title = "QR Code Scanner"
         
@@ -75,5 +75,9 @@ extension ScannerViewController: QRReaderViewDelegate {
             print(error)
             displayInvalidSignature()
         }
+    }
+    
+    func didFailToSetup(qrReaderView: QRReaderView) {
+        displayAlert(with: "Error when trying to start camera")
     }
 }

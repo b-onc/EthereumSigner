@@ -30,12 +30,12 @@ class AccountDetailTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        titleLabel.textColor = .gray
+        titleLabel.textColor = .systemGray
         titleLabel.font = .boldSystemFont(ofSize: 16)
         titleLabel.textAlignment = .right
         stackView.addArrangedSubview(titleLabel)
         
-        subtitleLabel.textColor = .black
+        subtitleLabel.textColor = .label
         subtitleLabel.font = .boldSystemFont(ofSize: 16)
         subtitleLabel.textAlignment = .right
         subtitleLabel.lineBreakMode = .byTruncatingMiddle

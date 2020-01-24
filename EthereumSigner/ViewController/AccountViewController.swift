@@ -32,7 +32,7 @@ class AccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         title = "Account"
         
@@ -72,11 +72,13 @@ class AccountViewController: UIViewController {
             do {
                 let value = try result.get()
                 self?.infoData = [("Address", self?.user.address ?? "Error"), ("Balance", "\(value) Ether")]
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
             } catch {
+                self?.infoData = [("Error trying to get account balance", "Please restart the app")]
                 print(error)
+            }
+            
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
             }
         }
     }

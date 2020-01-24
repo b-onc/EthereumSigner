@@ -30,7 +30,7 @@ class SignatureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         title = "Signature"
         
@@ -58,11 +58,13 @@ class SignatureViewController: UIViewController {
         
         guard let qrFilter = CIFilter(name: "CIQRCodeGenerator") else {
             print("error when generating QR code: no CIQRCodeGenerator")
+            messageLabel.text = "Error when generating QR Code"
             return
         }
         qrFilter.setValue(signature.data(using: .utf8), forKey: "inputMessage")
         guard let qrImage = qrFilter.outputImage else {
             print("error when generating QR code: no output Image")
+            messageLabel.text = "Error when generating QR Code"
             return
         }
         let transform = CGAffineTransform(scaleX: 10, y: 10)
@@ -70,6 +72,7 @@ class SignatureViewController: UIViewController {
         let context = CIContext()
         guard let cgImage = context.createCGImage(scaledQrImage, from: scaledQrImage.extent) else {
             print("error when generating QR code: no CGImage")
+            messageLabel.text = "Error when generating QR Code"
             return
         }
         let processedImage = UIImage(cgImage: cgImage)
